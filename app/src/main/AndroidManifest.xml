@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -46,6 +48,36 @@
             android:name=".ComposeActivity"
             android:exported="false"
             android:label="@string/menu_compose"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ListViewActivity"
+            android:exported="false"
+            android:label="@string/title_listview"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".CustomDialogActivity"
+            android:exported="false"
+            android:label="@string/title_dialog"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".MenuXmlActivity"
+            android:exported="false"
+            android:label="@string/title_menu_test"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ActionModeActivity"
+            android:exported="false"
+            android:label="@string/title_action_mode"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false"
+            android:label="@string/title_recycler"
             android:parentActivityName=".MainActivity" />
     </application>
 

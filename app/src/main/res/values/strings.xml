@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">实验二 界面布局</string>
-    <string name="menu_title">实验二 Android 界面布局</string>
+    <string name="app_name">Android 实验</string>
+    <string name="menu_title">Android 课程实验</string>
+    <string name="section_lab2">实验二 · 界面布局</string>
+    <string name="section_lab3">实验三 · 界面组件</string>
     <string name="menu_linear">1. 线性布局（LinearLayout）</string>
     <string name="menu_table">2. 表格布局（TableLayout）</string>
     <string name="menu_constraint1">3. 约束布局 1（计算器）</string>
@@ -70,4 +72,65 @@
     <string name="one_traveller">1 Traveller</string>
     <string name="depart">DEPART</string>
     <string name="planet_image">星际航线插图</string>
+
+    <!-- ===== 实验三：界面组件 ===== -->
+    <string name="menu_listview">1. ListView（SimpleAdapter）</string>
+    <string name="menu_dialog">2. 自定义布局 AlertDialog</string>
+    <string name="menu_xml_menu">3. XML 定义菜单</string>
+    <string name="menu_action_mode">4. ActionMode 上下文菜单</string>
+    <string name="menu_recycler">5. RecyclerView 动物列表</string>
+
+    <!-- 实验三：ListView -->
+    <string name="title_listview">ListView 用法</string>
+    <string name="animal_lion">Lion</string>
+    <string name="animal_tiger">Tiger</string>
+    <string name="animal_monkey">Monkey</string>
+    <string name="animal_dog">Dog</string>
+    <string name="animal_cat">Cat</string>
+    <string name="animal_elephant">Elephant</string>
+    <string name="animal_image">动物图片</string>
+    <string name="notify_channel_name">列表项通知</string>
+    <string name="notify_channel_desc">点击 ListView 列表项后发送的通知</string>
+    <string name="notify_title">列表项被选中</string>
+
+    <!-- 实验三：自定义对话框 -->
+    <string name="title_dialog">自定义 AlertDialog</string>
+    <string name="dialog_show">显示登录对话框</string>
+    <string name="dialog_hint">点击下面的按钮，通过 AlertDialog.Builder.setView() 弹出下图所示的自定义登录框。</string>
+    <string name="dialog_header">ANDROID APP</string>
+    <string name="dialog_username">Username</string>
+    <string name="dialog_password">Password</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_sign_in">Sign in</string>
+    <string name="dialog_sign_in_empty">请先输入用户名</string>
+
+    <!-- 实验三：XML 菜单 -->
+    <string name="title_menu_test">MenuTest</string>
+    <string name="menu_test_text">用于测试的内容</string>
+    <string name="menu_font_size">字体大小</string>
+    <string name="menu_font_small">小</string>
+    <string name="menu_font_normal">中</string>
+    <string name="menu_font_large">大</string>
+    <string name="menu_normal_item">普通菜单项</string>
+    <string name="menu_font_color">字体颜色</string>
+    <string name="menu_color_red">红色</string>
+    <string name="menu_color_black">黑色</string>
+    <string name="menu_normal_toast">你点击了普通菜单项</string>
+
+    <!-- 实验三：ActionMode -->
+    <string name="title_action_mode">ActionMode 上下文菜单</string>
+    <string name="arith_one">One</string>
+    <string name="arith_two">Two</string>
+    <string name="arith_three">Three</string>
+    <string name="arith_four">Four</string>
+    <string name="arith_five">Five</string>
+    <string name="action_select_all">全选</string>
+    <string name="action_delete">删除</string>
+    <string name="action_selected_count">%1$d selected</string>
+
+    <!-- 实验三：RecyclerView -->
+    <string name="title_recycler">RecyclerView 动物列表</string>
+    <string name="recycler_add">增加一条记录</string>
+    <string name="recycler_clicked">你点击了：%1$s</string>
+    <string name="recycler_item_sub">第 %1$d 条记录</string>
 </resources>

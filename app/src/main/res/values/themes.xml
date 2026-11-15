@@ -1,5 +1,16 @@
 <resources>
-    <style name="Theme.AndroidLab1" parent="Theme.AppCompat.DayNight.NoActionBar" />
+    <style name="Theme.AndroidLab1" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="actionModeStyle">@style/LabActionMode</item>
+    </style>
+
+    <style name="LabActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="background">@drawable/bg_action_mode</item>
+        <item name="titleTextStyle">@style/LabActionModeTitle</item>
+    </style>
+
+    <style name="LabActionModeTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
 
     <style name="LabToolbar" parent="Widget.AppCompat.Toolbar">
         <item name="android:layout_width">match_parent</item>
