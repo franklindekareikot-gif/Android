@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/LabToolbar"
+        android:background="#FFFFFF"
+        app:title="@string/menu_constraint2"
+        app:titleTextColor="#333333" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:contentDescription="@string/tab_stations"
+                android:src="@drawable/ic_rocket" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:text="@string/tab_stations"
+                android:textColor="#9E9E9E"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:contentDescription="@string/tab_flights"
+                android:src="@drawable/ic_flight" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:text="@string/tab_flights"
+                android:textColor="#9E9E9E"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:contentDescription="@string/tab_rovers"
+                android:src="@drawable/ic_rover" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:text="@string/tab_rovers"
+                android:textColor="#9E9E9E"
+                android:textSize="9sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/tabs_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabs" />
+
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="104dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/box_green"
+        android:gravity="center"
+        android:text="@string/from_city"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabs_divider" />
+
+    <ImageView
+        android:id="@+id/iv_swap"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:contentDescription="@string/swap_city"
+        android:src="@drawable/ic_swap"
+        app:layout_constraintBottom_toBottomOf="@id/tv_from"
+        app:layout_constraintEnd_toStartOf="@id/tv_to"
+        app:layout_constraintStart_toEndOf="@id/tv_from"
+        app:layout_constraintTop_toTopOf="@id/tv_from" />
+
+    <TextView
+        android:id="@+id/tv_to"
+        android:layout_width="104dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/box_green"
+        android:gravity="center"
+        android:text="@string/to_city"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_from" />
+
+    <TextView
+        android:id="@+id/tv_one_way"
+        android:layout_width="104dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box_orange"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="@string/one_way"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/tv_from"
+        app:layout_constraintTop_toBottomOf="@id/tv_from" />
+
+    <ImageView
+        android:id="@+id/iv_radio"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:contentDescription="@string/one_way"
+        android:src="@drawable/ic_radio_off"
+        app:layout_constraintBottom_toBottomOf="@id/tv_one_way"
+        app:layout_constraintEnd_toEndOf="@id/tv_one_way"
+        app:layout_constraintTop_toTopOf="@id/tv_one_way" />
+
+    <TextView
+        android:id="@+id/tv_traveller"
+        android:layout_width="104dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box_orange"
+        android:gravity="center"
+        android:text="@string/one_traveller"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/tv_from"
+        app:layout_constraintTop_toBottomOf="@id/tv_one_way" />
+
+    <ImageView
+        android:id="@+id/iv_planet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/planet_image"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_planet"
+        app:layout_constraintBottom_toTopOf="@id/tv_depart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_traveller"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tv_depart"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/box_green"
+        android:gravity="center"
+        android:letterSpacing="0.15"
+        android:text="@string/depart"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

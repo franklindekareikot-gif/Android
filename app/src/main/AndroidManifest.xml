@@ -17,6 +17,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".LinearLayoutActivity"
+            android:exported="false"
+            android:label="@string/menu_linear"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".TableLayoutActivity"
+            android:exported="false"
+            android:label="@string/menu_table"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".Constraint1Activity"
+            android:exported="false"
+            android:label="@string/title_constraint1"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".Constraint2Activity"
+            android:exported="false"
+            android:label="@string/menu_constraint2"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ComposeActivity"
+            android:exported="false"
+            android:label="@string/menu_compose"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

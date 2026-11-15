@@ -1,8 +1,73 @@
 <resources>
-    <string name="app_name">实验一</string>
-    <string name="hello">Hello World!</string>
-    <string name="subtitle">我的第一个 Android 应用</string>
-    <string name="btn_click">点我一下</string>
-    <string name="clicked_times">你已点击 %1$d 次</string>
-    <string name="toast_prefix">按钮被点击：%1$d 次</string>
+    <string name="app_name">实验二 界面布局</string>
+    <string name="menu_title">实验二 Android 界面布局</string>
+    <string name="menu_linear">1. 线性布局（LinearLayout）</string>
+    <string name="menu_table">2. 表格布局（TableLayout）</string>
+    <string name="menu_constraint1">3. 约束布局 1（计算器）</string>
+    <string name="menu_constraint2">4. 约束布局 2（订票界面）</string>
+    <string name="menu_compose">5. Compose 实验（课程学习任务）</string>
+
+    <!-- 线性布局 -->
+    <string name="cell_one_one">One,One</string>
+    <string name="cell_one_two">One,Two</string>
+    <string name="cell_one_three">One,Three</string>
+    <string name="cell_one_four">One,Four</string>
+    <string name="cell_two_one">Two,One</string>
+    <string name="cell_two_two">Two,Two</string>
+    <string name="cell_two_three">Two,Three</string>
+    <string name="cell_two_four">Two,Four</string>
+    <string name="cell_three_one">Three,One</string>
+    <string name="cell_three_two">Three,Two</string>
+    <string name="cell_three_three">Three,Three</string>
+    <string name="cell_three_four">Three,Four</string>
+    <string name="cell_four_one">Four,One</string>
+    <string name="cell_four_two">Four,Two</string>
+    <string name="cell_four_three">Four,Three</string>
+    <string name="cell_four_four">Four,Four</string>
+
+    <!-- 表格布局 -->
+    <string name="table_header">Hello TableLayout</string>
+    <string name="table_open">Open…</string>
+    <string name="table_open_key">Ctrl-O</string>
+    <string name="table_save">Save…</string>
+    <string name="table_save_key">Ctrl-S</string>
+    <string name="table_save_as">Save As…</string>
+    <string name="table_save_as_key">Ctrl-Shift-S</string>
+    <string name="table_import">X Import…</string>
+    <string name="table_export">X Export…</string>
+    <string name="table_export_key">Ctrl-E</string>
+    <string name="table_quit">Quit</string>
+
+    <!-- 约束布局 1 -->
+    <string name="title_constraint1">ConstraintLayoutTest</string>
+    <string name="calc_input">Input</string>
+    <string name="calc_default_value">0.0</string>
+    <string name="key_0">0</string>
+    <string name="key_1">1</string>
+    <string name="key_2">2</string>
+    <string name="key_3">3</string>
+    <string name="key_4">4</string>
+    <string name="key_5">5</string>
+    <string name="key_6">6</string>
+    <string name="key_7">7</string>
+    <string name="key_8">8</string>
+    <string name="key_9">9</string>
+    <string name="key_dot">.</string>
+    <string name="key_add">+</string>
+    <string name="key_minus">−</string>
+    <string name="key_mul">×</string>
+    <string name="key_div">÷</string>
+    <string name="key_eq">=</string>
+
+    <!-- 约束布局 2 -->
+    <string name="tab_stations">Space Stations</string>
+    <string name="tab_flights">Flights</string>
+    <string name="tab_rovers">Rovers</string>
+    <string name="from_city">DCA</string>
+    <string name="to_city">MARS</string>
+    <string name="swap_city">交换出发地/目的地</string>
+    <string name="one_way">One Way</string>
+    <string name="one_traveller">1 Traveller</string>
+    <string name="depart">DEPART</string>
+    <string name="planet_image">星际航线插图</string>
 </resources>
