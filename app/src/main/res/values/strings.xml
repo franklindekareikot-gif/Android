@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">实验一</string>
+    <string name="hello">Hello World!</string>
+    <string name="subtitle">我的第一个 Android 应用</string>
+    <string name="btn_click">点我一下</string>
+    <string name="clicked_times">你已点击 %1$d 次</string>
+    <string name="toast_prefix">按钮被点击：%1$d 次</string>
+</resources>
